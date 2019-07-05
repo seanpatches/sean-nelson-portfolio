@@ -1,25 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styles from '../styles/header.module.css'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header className={styles.header}>
+    <div className={styles.center}>
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
+        <Link to="/" style={{
             color: `white`,
             textDecoration: `none`,
           }}
@@ -27,6 +15,12 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <nav className={styles.nav} >
+          <Link to="/">Home</Link>
+          <Link to="/about">About Me</Link>
+          <Link to="/work">Work</Link>
+          <Link to="/contact">Contacts</Link>
+      </nav>
     </div>
   </header>
 )
