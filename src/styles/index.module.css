@@ -1,0 +1,44 @@
+body {
+  overflow: hidden;
+}
+
+.homeBody {
+  z-index: 0;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  font-size: 3em;
+  background: red;
+  text-align: center;
+}
+
+.workLink {
+  position: absolute;
+  top: 325px;
+  font-size: 3em;
+  background: red;
+  z-index: 2;
+}
+.resumeLink {
+  position: absolute;
+  top: 400px;
+  font-size: 3em;
+  background: blue;
+  z-index: 2;
+}
+.githubLink {
+  position: relative;
+  top: 500px;
+  background: green;
+  z-index: 2;
+}
+.linkedinLink {
+  position: relative;
+  top: 10vh;
+  background: purple;
+  z-index: 2;
+}

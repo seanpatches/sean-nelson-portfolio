@@ -1,6 +1,58 @@
-.header {
-  background-color: green;
-  h1 {
-    color: green;
-  }
+* {
+  margin: 0;
 }
+
+a:link {
+  color: #444440;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+a:visited {
+  color: #444440;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 a {
+  font-size: 4vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #d1d7cb;
+  border-bottom: #444440 solid 5px;
+}
+
+.center {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+h1 {
+  display: flex;
+  margin: 0;
+  padding: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 0px;
+  background: rgb(209, 215, 203);
+  color: #444440;
+  font-size: 2.5vw;
+}
+
+.nav a {
+
+  margin: 20px;
+}
+

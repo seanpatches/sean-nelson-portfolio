@@ -18,7 +18,7 @@ export const GardenSeanImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "gardenSean.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "gardenSean.png" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
@@ -121,6 +121,23 @@ export const YourDreamFriendImage2 = () => (
     query={graphql`
       query {
         placeholderImage: file(relativePath: { eq: "dream2.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+  />
+)
+
+export const GithubLogoImage = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "githubLogo.png" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Sean Nelson - Portfolio`,
+    title: `Sean Nelson Software Developer`,
     description: `A portfolio project for the software developer, Sean Nelson.`,
-    author: `github: @seanpatches, smnelsonn@gmail.com`,
+    author: `Github: @seanpatches, smnelsonn@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
