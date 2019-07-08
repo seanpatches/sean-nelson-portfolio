@@ -1,10 +1,33 @@
 body {
   overflow: hidden;
+  background: #444440;
+  min-height: 500px;
+
 }
 
 .homeBody {
-  z-index: 0;
-  image-rendering: -webkit-optimize-contrast;
+  z-index: 1;
+  background: #444440;
+}
+
+.imageNav{
+  display: flex;
+  justify-content: space-around;
+
+  position: fixed;
+  width: 100%;
+  background: #d1d7cb;
+  bottom: 0px;
+  padding: 20px;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  font-size: 3em;
+  background: red;
+  text-align: center;
 }
 
 .welcomeText {
@@ -18,27 +41,25 @@ body {
 
 .workLink {
   position: absolute;
-  top: 325px;
+  top: 500px;
+  width: 100%;
   font-size: 3em;
   background: red;
-  z-index: 2;
+  text-align: center;
 }
+
 .resumeLink {
-  position: absolute;
-  top: 400px;
-  font-size: 3em;
+  width: 80px;
   background: blue;
   z-index: 2;
 }
+
 .githubLink {
-  position: relative;
-  top: 500px;
-  background: green;
+  width: 80px;
   z-index: 2;
 }
+
 .linkedinLink {
-  position: relative;
-  top: 10vh;
   background: purple;
   z-index: 2;
 }

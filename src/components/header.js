@@ -13,7 +13,6 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <nav className={styles.nav} >
-          <Link to="/">Home</Link>
           <Link to="/about">About Me</Link>
           <Link to="/work">Work</Link>
           <Link to="/contact">Contacts</Link>

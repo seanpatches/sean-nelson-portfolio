@@ -15,18 +15,18 @@ a:visited {
 }
 
 h1 a {
-  font-size: 4vw;
+  font-size: 1.5em;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   background: #d1d7cb;
-  border-bottom: #444440 solid 5px;
+  border-bottom: #444440 solid 2px;
 }
 
 .center {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +48,7 @@ h1 {
   margin-right: 0px;
   background: rgb(209, 215, 203);
   color: #444440;
-  font-size: 2.5vw;
+  font-size: 1.5em;
 }
 
 .nav a {
