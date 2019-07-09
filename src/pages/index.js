@@ -7,6 +7,7 @@ import SEO from "../components/seo";
 import styles from "../styles/index.module.css";
 
 const IndexPage = () => (
+  <div className={styles.index} >
   <Layout>
     <SEO title="Home" />
     <div className={styles.homeBody}>
@@ -30,6 +31,7 @@ const IndexPage = () => (
       </div>
     </div>
   </Layout>
+  </div> 
 )
 
 export default IndexPage

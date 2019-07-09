@@ -2,19 +2,19 @@
   margin: 0;
 }
 
-a:link {
+.header a:link {
+  color: red;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header a:visited {
   color: #444440;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
 }
 
-a:visited {
-  color: #444440;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-}
-
-h1 a {
+.header h1 a {
   font-size: 1.5em;
 }
 
@@ -34,7 +34,7 @@ h1 a {
   margin-right: 2vw;
 }
 
-h1 {
+.header h1 {
   display: flex;
   margin: 0;
   padding: 5px;

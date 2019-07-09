@@ -33,6 +33,7 @@ export const Image = ({filename, alt}) => (
         <Img
           alt={alt}
           sizes={imageSizes}
+          
         />
       );
     }}
