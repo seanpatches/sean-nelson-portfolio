@@ -1,19 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Image } from './image';
-import styles from "../styles/unwastedProjectThumb.module.css";
+import styles from '../styles/unwastedProjectThumb.module.css';
 
+import AOS from 'aos';
 
-function UnwastedProjectThumb ({ name, description, firstImage, secondImage, link }) {
+AOS.init({
+  duration:1200
+});
+
+const unwastedImageFade = [styles.firstImageContainer, styles.animated, styles.animatedFadeInLeft, styles.fadeInLeft].join(' ');
+const unwastedNameFade = [styles.animated, styles.animatedFadeInLeft, styles.fadeInLeft].join(' ');
+
+function UnwastedProjectThumb({ name, description, firstImage, secondImage, link }) {
   return (
     <div className={styles.unwastedProjectThumb}>
       <div className={styles.left}>
-      <a href={link} >
-        <h2>{name}</h2>
-        <div className={styles.firstImageContainer}>
-          <Image filename={firstImage} />
-        </div>
-      </a>
+        <a href={link} >
+          <h2 className={unwastedNameFade}>{name}</h2>
+          <div className={unwastedImageFade}>
+            <Image filename={firstImage} />
+          </div>
+        </a>
       </div>
       <div className={styles.right}>
         <div className={styles.description}>
@@ -21,7 +29,7 @@ function UnwastedProjectThumb ({ name, description, firstImage, secondImage, lin
         </div>
       </div>
     </div>
-  )};
+  );}
 
 UnwastedProjectThumb.propTypes = {
   name: PropTypes.string.isRequired,
@@ -29,6 +37,6 @@ UnwastedProjectThumb.propTypes = {
   link: PropTypes.string.isRequired,
   firstImage: PropTypes.string.isRequired,
   secondImage: PropTypes.string.isRequired,
-}
+};
 
 export default UnwastedProjectThumb;

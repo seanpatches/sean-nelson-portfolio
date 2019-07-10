@@ -4,11 +4,9 @@ import Layout from '../components/layout';
 import { Image } from '../components/image';
 import SEO from '../components/seo';
 import styles from '../styles/index.module.css';
-import AOS from 'aos';
 
-AOS.init({
-  duration: 1200
-});
+const bioFadeUp = [styles.bio, styles.animated, styles.animatedFadeInUp, styles.fadeInUp].join(' ');
+const workFadeUp = [styles.workLink, styles.animated, styles.animatedFadeInUp, styles.fadeInUp].join(' ');
 
 const IndexPage = () => (
   <div className={styles.index} >
@@ -23,11 +21,11 @@ const IndexPage = () => (
             </div>
           </div>
           <br></br>
-          <div data-aos="fade-up" className={styles.bio}>
+          <div className={bioFadeUp}>
             <p>Bringing programming, data, and communication together.</p>
           </div>
         </div>
-        <div className={styles.workLink}>
+        <div className={workFadeUp}>
           <Link to="/work">Check Out My Work!</Link >
         </div>
         <div className={styles.imageNav} >

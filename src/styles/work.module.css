@@ -1,3 +1,13 @@
+.animatedFadeInLeft {
+  opacity: 0
+}
+
+.fadeInLeft {
+  opacity: 0;
+  animation-name: fadeInRight;
+  -webkit-animation-name: fadeInRight;
+}
+
 .work {
   background: #444440;
   height: 100vh;

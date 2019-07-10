@@ -10,15 +10,38 @@
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+      transform: translate3d(0,40px,0)
   }
-
   to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
   }
 }
 
@@ -48,6 +71,7 @@
 }
 
 .index .bio {
+  animation-delay: 2.2s;
   background: white;
 }
 
@@ -79,6 +103,7 @@
 }
 
 .index .workLink {
+  animation-delay: 2.5s;
   position: absolute;
   top: 500px;
   width: 100%;
