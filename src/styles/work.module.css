@@ -1,0 +1,26 @@
+.work {
+  background: #444440;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.work .projects {
+  background: #444440;
+}
+
+.work .projects h3{
+  font-size: 1.5em;
+  color: #444440;
+  background: #d1d7cb
+}
+
+.work .projects a{
+  text-decoration: none;
+  color: #d1d7cb;
+  position: relative;
+  font-size: 2.5em;
+}

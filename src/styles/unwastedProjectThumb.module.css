@@ -1,0 +1,44 @@
+.firstImageContainer{
+  width: 506.72px;
+}
+
+.unwastedProjectThumb{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ }
+ 
+ .unwastedProjectThumb .description {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   min-width: 672px;
+   overflow: auto;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+ .unwastedProjectThumb .right {
+  display: flex;
+  flex-direction: row;
+  background: #d1d7cb;
+  width: 100%;
+  height: 75vh;
+  min-height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: solid black 1px;
+  z-index: 0
+ }
+
+ .unwastedProjectThumb .left {
+  background: #444440;
+  width: 100%;
+  min-width: 600px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+ }

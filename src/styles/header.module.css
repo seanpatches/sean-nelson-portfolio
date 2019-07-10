@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   background: #d1d7cb;
-  border-bottom: #444440 solid 2px;
+  border-bottom: black solid 2px;
 }
 
 .center {
