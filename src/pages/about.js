@@ -1,16 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Image } from '../components/image';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import styles from '../styles/about.module.css';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const ContactPage = () => (
+const About = () => (
+  <>
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="About" />
+    <div className={styles.row}>
+      <div className={styles.leftColumn}>
+        <Image filename="presentationSean.png" />
+      </div>
+      <div className={styles.rightColumn}>
+        <h3>
+          <strong>I am a</strong> software engineer in Portland, Oregon.
+        </h3>
+      </div>
+    </div>
   </Layout>
-)
+  </>
+);
 
-export default ContactPage
+export default About;

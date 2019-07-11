@@ -1,0 +1,18 @@
+body{
+  height: 100%;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.leftColumn {
+  background: red;
+  height: 100%
+}
+
+.rightColumn {
+  background: blue;
+  height: 100%;
+}
