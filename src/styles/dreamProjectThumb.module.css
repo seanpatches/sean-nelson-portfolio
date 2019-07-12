@@ -35,6 +35,16 @@
   animation-name: fadeInRight;
 }
 
+.firstImageContainer{
+  width: 506.72px;
+  background: white;
+  transition: color 0.15s ease-in-out;
+}
+
+.firstImageContainer :hover{
+  transform: scale(1.01)
+}
+
 .dreamProjectThumb{
   width: 100%;
   display: flex;

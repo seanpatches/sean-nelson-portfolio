@@ -13,16 +13,18 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
       <div className={styles.homeBody}>
-        <Image filename="gardenSean.png" />
+        <div className={styles.imageContainer}>
+          <Image filename="gardenSean.png" />
+        </div>
         <div className={styles.welcomeText}>
           <div className={styles.typeWrite} >
             <div>
-              <h1>HI, I'M SEAN</h1>
+              <h1>HI,I'M SEAN</h1>
             </div>
           </div>
           <br></br>
           <div className={bioFadeUp}>
-            <p>Bringing programming, data, and communication together.</p>
+            <p>Bringing programming, data, and communication together</p>
           </div>
         </div>
         <div className={workFadeUp}>

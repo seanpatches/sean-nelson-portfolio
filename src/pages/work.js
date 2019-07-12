@@ -19,7 +19,7 @@ const WorkPage = () => (
         <div className={styles.unwasted}>
           <UnwastedProjectThumb name={unwasted.name} description={unwasted.description} firstImage={unwasted.firstImage} secondImage={unwasted.secondImage} link={unwasted.link} />
         </div>
-        <div data-aos="fade-up" className={styles.dream}>
+        <div className={styles.dream}>
           <DreamProjectThumb name={dream.name} description={dream.description} firstImage={dream.firstImage} secondImage={dream.secondImage} link={dream.link} />
         </div>
       </div>

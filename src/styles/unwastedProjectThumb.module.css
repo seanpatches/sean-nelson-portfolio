@@ -33,6 +33,11 @@
 
 .firstImageContainer{
   width: 506.72px;
+  transition: color 0.15s ease-in-out;
+}
+
+.firstImageContainer :hover{
+  transform: scale(1.01)
 }
 
 .unwastedProjectThumb{
