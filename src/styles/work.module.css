@@ -26,9 +26,10 @@
 }
 
 .work .projects h3{
-  font-size: 1.5em;
+  font-size: 2.0em;
   color: #444440;
-  background: #d1d7cb
+  background: #d1d7cb;
+  height: 100%;
 }
 
 .work .projects a{

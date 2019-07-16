@@ -1,29 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Sean Nelson Software Developer`,
-    description: `A portfolio project for the software developer, Sean Nelson.`,
-    author: `Github: @seanpatches, smnelsonn@gmail.com`,
+    title: 'Sean Nelson Software Developer',
+    description: 'A portfolio project for the software developer, Sean Nelson.',
+    author: 'Github: @seanpatches, smnelsonn@gmail.com',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-s3',
       options: {
-        name: `images`,
+        bucketName: 'seannelson.dev'
+      },
+    },
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
@@ -31,4 +37,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

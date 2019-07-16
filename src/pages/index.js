@@ -7,7 +7,7 @@ import styles from '../styles/index.module.css';
 
 const bioFadeUp = [styles.bio, styles.animated, styles.animatedFadeInUp, styles.fadeInUp].join(' ');
 const workFadeUp = [styles.workLink, styles.animated, styles.animatedFadeInUp, styles.fadeInUp].join(' ');
-
+const typeString = 'HI, I\'M SEAN';
 const IndexPage = () => (
   <div className={styles.index} >
     <Layout>
@@ -19,12 +19,12 @@ const IndexPage = () => (
         <div className={styles.welcomeText}>
           <div className={styles.typeWrite} >
             <div>
-              <h1>HI,I'M SEAN</h1>
+              <h1>{typeString}</h1>
             </div>
           </div>
           <br></br>
           <div className={bioFadeUp}>
-            <p>Bringing programming, data, and communication together</p>
+            <p>Bringing programming, data, <br></br>and communication together.</p>
           </div>
         </div>
         <div className={workFadeUp}>

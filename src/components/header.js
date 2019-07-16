@@ -15,7 +15,7 @@ const Header = () => (
       <nav className={styles.nav} >
         <Link to="/about">About Me</Link>
         <Link to="/work">Work</Link>
-        <Link to="/contact">Contacts</Link>
+        {/* <Link to="/contact">Contact</Link> */}
       </nav>
     </div>
   </header>

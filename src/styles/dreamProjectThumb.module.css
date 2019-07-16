@@ -37,7 +37,6 @@
 
 .firstImageContainer{
   width: 506.72px;
-  background: white;
   transition: color 0.15s ease-in-out;
 }
 
@@ -55,14 +54,13 @@
  }
  
  .dreamProjectThumb .description {
-   display: flex;
-   justify-content: center;
-   width: 100%;
-   min-width: 672px;
-   overflow: hidden;
-   margin-left: 20px;
-   margin-right: 20px;
-   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 672px;
+  margin-left: 20px;
+  margin-right: 20px;
  }
 
  .dreamProjectThumb .left {
@@ -70,7 +68,7 @@
   flex-direction: row;
   background: #d1d7cb;
   width: 100%;
-  height: 75vh;
+  height: 45%;
   min-height: 370px;
   display: flex;
   justify-content: center;

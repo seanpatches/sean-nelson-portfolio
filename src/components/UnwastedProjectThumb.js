@@ -3,16 +3,10 @@ import PropTypes from 'prop-types';
 import { Image } from './image';
 import styles from '../styles/unwastedProjectThumb.module.css';
 
-import AOS from 'aos';
-
-AOS.init({
-  duration:1200
-});
-
 const unwastedImageFade = [styles.firstImageContainer, styles.animated, styles.animatedFadeInLeft, styles.fadeInLeft].join(' ');
 const unwastedNameFade = [styles.animated, styles.animatedFadeInLeft, styles.fadeInLeft].join(' ');
 
-function UnwastedProjectThumb({ name, description, firstImage, secondImage, link }) {
+function UnwastedProjectThumb({ name, description, firstImage, link, tech }) {
   return (
     <div className={styles.unwastedProjectThumb}>
       <div className={styles.left}>
@@ -26,6 +20,7 @@ function UnwastedProjectThumb({ name, description, firstImage, secondImage, link
       <div className={styles.right}>
         <div className={styles.description}>
           <h3>{description}</h3>
+          <h2>{tech}</h2>
         </div>
       </div>
     </div>
@@ -37,6 +32,7 @@ UnwastedProjectThumb.propTypes = {
   link: PropTypes.string.isRequired,
   firstImage: PropTypes.string.isRequired,
   secondImage: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired
 };
 
 export default UnwastedProjectThumb;

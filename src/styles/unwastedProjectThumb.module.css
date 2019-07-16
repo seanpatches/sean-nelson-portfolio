@@ -50,12 +50,21 @@
  
  .unwastedProjectThumb .description {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    width: 100%;
    min-width: 672px;
-   overflow: auto;
    margin-left: 20px;
    margin-right: 20px;
+ }
+
+ .unwastedProjectThumb .description h2{
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  top: 20px;
+  right: 16px;
+  width: 100%;
+  text-align: center;
  }
 
  .unwastedProjectThumb .right {
@@ -63,7 +72,7 @@
   flex-direction: row;
   background: #d1d7cb;
   width: 100%;
-  height: 75vh;
+  height: 50%;
   min-height: 370px;
   display: flex;
   justify-content: center;
@@ -77,6 +86,8 @@
   width: 100%;
   min-width: 600px;
   display: flex;
+  position: relative;
+  bottom: 15px;
   justify-content: center;
   z-index: 1;
  }

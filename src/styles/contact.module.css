@@ -1,0 +1,80 @@
+body{
+  height: 100%;
+  background: #444440;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  min-width: 1440px;
+}
+
+.leftColumn {
+  height: 100%;
+  min-width: 720px;
+}
+
+.rightColumn {
+  height: 100%;
+  min-width: 720px;
+}

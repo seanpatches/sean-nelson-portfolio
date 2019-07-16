@@ -91,9 +91,9 @@ body {
 
 .index .bio {
   position: relative;
-  top: 50px;
+  top: 40px;
   animation-delay: 2.2s;
-  background: #FFFFFFAB;
+  background: #FFFFFF60;
   border-radius: 5px;
   padding: 5px;
   padding-left: 30px;
@@ -103,6 +103,7 @@ body {
 
 .index .bio p{
   width: 1200px; 
+  color: #000000
 }
 
 .index .typeWrite h1{
@@ -130,6 +131,7 @@ body {
 .index .imageNav{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: fixed;
   width: 100%;
   max-width: 100%;
@@ -137,15 +139,13 @@ body {
   height: 100px;
   background: #d1d7cb;
   bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   transition: all 0.15s ease-in-out;
 }
 
 .index .workLink {
   animation-delay: 2.5s;
   position: absolute;
-  top: 500px;
+  top: 530px;
   width: 100%;
   font-size: 3em;
   text-align: center;
@@ -160,6 +160,7 @@ body {
 
 .index .workLink a:hover{
   color: #d1d7cbCC;
+  font-size: 1.02em;
 }
 
 .index .resumeLink {
@@ -178,5 +179,6 @@ body {
 }
 
 .index .imageNav div:hover{
-  width: 85px;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
 }
