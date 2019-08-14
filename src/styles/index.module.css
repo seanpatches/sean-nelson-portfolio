@@ -54,7 +54,6 @@ body {
 }
 
 .index body {
-  overflow: hidden;
   min-height: 500px;
   height: 100%;
   background: #d1d7cbCC;
@@ -64,19 +63,19 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  min-width: 450px;
+  min-width: 1000px;
   position: relative;
-  bottom: 75px;
+  bottom: 100px;
 }
 
 .index .imageContainer {
   height: 960px;
-  min-width: 1000px;
+  min-width: 1200px;
 }
 
 .index .welcomeText {
   position: absolute;
-  top: 200px;
+  top: 220px;
   font-size: 3em;
   font-family: 'Source Code Pro', monospace;
   text-align: center;
@@ -91,7 +90,7 @@ body {
 
 .index .bio {
   position: relative;
-  top: 10px;
+  top: 0px;
   animation-delay: 2.2s;
   background: #FFFFFF60;
   border-radius: 5px;
@@ -132,20 +131,20 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
+  position: absolute;
   width: 100%;
   max-width: 100%;
   max-height: 100px;
   height: 100px;
   background: #d1d7cb;
-  bottom: 0px;
+  bottom: 145px;
   transition: all 0.15s ease-in-out;
 }
 
 .index .workLink {
   animation-delay: 2.5s;
   position: absolute;
-  top: 550px;
+  top: 555px;
   width: 100%;
   font-size: 3em;
   text-align: center;
