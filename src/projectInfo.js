@@ -9,7 +9,7 @@ export const unwasted = {
 
 export const dream = {
   name: 'My Dream Friend',
-  description: 'Your Dream Friend is an engaging interactive game for users of all ages. Within the Dream World Map, we have a "Red Card, Blue Card" card game in which the user can employ logic to win and increase their money level. The game also includes a store where you can spend money they earned on the game, a house, and a party.',
+  description: 'Your Dream Friend is an engaging interactive game for users of all ages. Within the Dream World Map, we have a card game in which the user can employ logic to win and increase their money level. The game also includes a store where you can spend money they earned on the game, a house, and a party.',
   firstImage: 'dream1.jpg',
   secondImage: 'dream2.jpg',
   link: 'https://donut-group.github.io/',

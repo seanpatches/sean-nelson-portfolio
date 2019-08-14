@@ -3,10 +3,19 @@
 }
 
 .animated {
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
   animation-duration: 1s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both
+}
+
+.animated:hover{
+  color: white;
 }
 
 @-webkit-keyframes fadeInRight {
@@ -65,11 +74,12 @@
 
  .dreamProjectThumb .left {
   display: flex;
+  flex: 50%;
   flex-direction: row;
   background: #d1d7cb;
   width: 100%;
   height: 45%;
-  min-height: 370px;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,10 +88,11 @@
  }
 
  .dreamProjectThumb .right {
+  display: flex;
+  flex: 50%;
   background: #444440;
   width: 100%;
   min-width: 600px;
-  display: flex;
   justify-content: center;
   z-index: 1;
  }
