@@ -19,7 +19,7 @@ const IndexPage = () => (
         <div className={styles.welcomeText}>
           <div className={styles.typeWrite} >
             <div>
-              <h1>{typeString}</h1>
+              <h2>{typeString}</h2>
             </div>
           </div>
           <br></br>
