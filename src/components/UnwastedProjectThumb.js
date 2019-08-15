@@ -20,7 +20,6 @@ function UnwastedProjectThumb({ name, description, firstImage, link, tech }) {
       <div className={styles.right}>
         <div className={styles.description}>
           <h3>{description}</h3>
-          <h2>{tech}</h2>
         </div>
       </div>
     </div>
